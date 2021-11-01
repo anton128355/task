@@ -13,7 +13,7 @@ def totalizator(bet, result):
         # result_presumptive - the difference between the expected points. Draw (0), win (+) or defeat (-) of the first team.
         result_presumptive = int(res.split(":")[0]) - int(res.split(":")[1])
         
-        # 1 - ничья, 2 - victory or defeat of the first team.
+        # 1 - draw, 2 - victory or defeat of the first team.
         if (result_difference == result_presumptive == 0) or ((result_difference * result_presumptive) > 0):
 
             lst_points.append(1)
