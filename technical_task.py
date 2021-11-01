@@ -22,4 +22,4 @@ def totalizator(bet, result):
             lst_points.append(0)
 
     # A dictionary with players as keys and their scores as meanings.
-    print((dict(zip(bet.keys(), lst_points))))
+    return((dict(zip(bet.keys(), lst_points))))
